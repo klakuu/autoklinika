@@ -1,0 +1,1 @@
+var i=1;function slider(){document.getElementById("slider").style="background:url(jpg/slider"+i+".jpg);background-size:100%;background-repeat:no-repeat;",4==i?i=1:i++,$("#slider").fadeIn(400),setTimeout("slider()",5e3),setTimeout("schowaj()",4600)}function schowaj(){$("#slider").fadeOut(400)}

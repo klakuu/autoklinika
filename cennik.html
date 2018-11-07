@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Auto klinika - Cennik</title>
+	<meta name="author" content="Dominik Kłaczany">
+	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+    <script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+	<script src="js/skrypt.js"></script>
+	<link rel="Shortcut icon" href="jpg/logo2.png" />
+  </head>
+  <body onload="slider()">
+	<!-- MENU POCZĄTEK -->
+    <nav id="menu" class="navbar is-fixed-top">
+      <div class="container">
+        <div class="navbar-brand">
+          <a href="index.html" class="logoMenu">
+            <img class="logo" src="jpg/logov2.png" alt="Logo firmy Auto Klinika S.C">
+		  </a>
+          
+          <span id="option" class="navbar-burger burger" data-target="navMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+		
+        <div class="navbar-menu" id="navMenu">
+		  <div class="navbar-start">
+			<a class="navbar-item option" href="index.html">START</a>
+			<a class="navbar-item option" href="oferta.html">OFERTA</a>
+			<a class="navbar-item option" href="cennik.html">CENNIK</a>
+			<a id="option-disabled" class="navbar-item" title="Coming soon!">GALERIA</a>
+			<a class="navbar-item option" href="kontakt.html">KONTAKT</a>
+		  </div>
+		  
+		  <div class="navbar-end">
+			<a class="navbar-item option"  href="">
+				<i class="fab fa-facebook-square"></i>
+			</a>
+		  </div>
+		</div>
+      </div>
+    </nav>
+	<!-- MENU KONIEC -->
+	<!-- SLIDER POCZĄTEK -->
+	<div class="columns">
+		<div id="slider" class="column is-12">
+			<div id="sliderTitle" class="title is-size-4-mobile is-size-1-fullhd has-text-centered">ODDAJ SAMOCHÓD W RĘCE SPECJALISTÓW</div>
+			<div id="sliderSubtitle" class="subtitle is-size-6-mobile is-size-3-fullhd has-text-centered">Najniższe ceny w połączeniu z najlepszą jakością</div>
+		</div>
+	</div>
+	<!-- SLIDER KONIEC -->
+	<!-- OFERTA POCZĄTEK -->
+	<div class="columns">
+		<div class="column is-12 has-text-centered">
+			<div class="title is-size-2-desktop is-size-1-fullhd is-size-4-mobile"><i class="far fa-money-bill-alt titleBlue"></i> Cennik</div>
+		</div>
+	</div>
+	<div class="columns">
+		<div class="column is-8-desktop is-offset-2-desktop is-12-mobile">
+			<table id="cennik" class="table is-fullwidth">
+			<!--	<thead>
+					<th class="has-text-centered">Nazwa usługi</th>
+					<th class="has-text-centered">Jednostka</th>
+					<th class="has-text-centered">Cena jednostkowa</th>
+				</thead>
+				
+				<tfoot>
+					<th class="has-text-centered">Nazwa usługi</th>
+					<th class="has-text-centered">Jednostka</th>
+					<th class="has-text-centered">Cena jednostkowa</th>
+				</tfoot>
+			-->
+				<tbody>
+					<tr>
+						<td id="cennik" colspan="3">
+							<div class="title is-size-3-fullhd is-size-4-desktop is-size-5-mobile has-text-centered has-text-weight-bold">Filtry, oleje i płyny</div>
+						</td>
+					</tr>
+					<tr>
+						<td id="cennik" class="has-text-centered">Wymiana oleju silnikowego z filtrem oleju</td>
+						<td id="cennik" class="has-text-centered">1 pojazd</td>
+						<td id="cennik" class="has-text-centered">50 zł</td>
+					</tr>
+					<tr>
+						<td id="cennik" class="has-text-centered">Wymiana filtrów - oleju, powietrza, paliwa, kabinowego</td>
+						<td id="cennik" class="has-text-centered">1 szt</td>
+						<td id="cennik" class="has-text-centered">od 10 zł</td>
+					</tr>
+					<tr>
+						<td id="cennik" class="has-text-centered">Wymiana płynu chłodniczego</td>
+						<td id="cennik" class="has-text-centered">1 pojazd</td>
+						<td id="cennik" class="has-text-centered">od 30 zł</td>
+					</tr>
+					
+					<tr>
+						<td id="cennik" colspan="3">
+							<div class="title is-size-3-fullhd is-size-4-desktop is-size-5-mobile has-text-centered has-text-weight-bold">Hamulce</div>
+						</td>
+					</tr>
+					<tr>
+						<td id="cennik" class="has-text-centered">Kontrola grubości klocków i tarcz hamulcowych</td>
+						<td id="cennik" class="has-text-centered">1 pojazd</td>
+						<td id="cennik" class="has-text-centered has-text-weight-bold">GRATIS</td>
+					</tr>
+					<tr>
+						<td id="cennik" class="has-text-centered">Wymiana klocków hamulcowych</td>
+						<td id="cennik" class="has-text-centered">1 oś</td>
+						<td id="cennik" class="has-text-centered">50 zł</td>
+					</tr>
+					<tr>
+						<td id="cennik" class="has-text-centered">Wymiana tarcz hamulcowych</td>
+						<td id="cennik" class="has-text-centered">1 oś</td>
+						<td id="cennik" class="has-text-centered">50 zł</td>
+					</tr>
+					<tr>
+						<td id="cennik" class="has-text-centered">Wymiana szczęk hamulcowych</td>
+						<td id="cennik" class="has-text-centered">1 pojazd</td>
+						<td id="cennik" class="has-text-centered">100 zł</td>
+					</tr>
+					<tr>
+						<td id="cennik" class="has-text-centered">Wymiana przewodów hamulcowych</td>
+						<td id="cennik" class="has-text-centered">1 pojazd</td>
+						<td id="cennik" class="has-text-centered">100 zł</td>
+					</tr>
+					<tr>
+						<td id="cennik" class="has-text-centered">Wymiana płynu hamulcowego</td>
+						<td id="cennik" class="has-text-centered">1 pojazd</td>
+						<td id="cennik" class="has-text-centered">40 zł</td>
+					</tr>
+					
+					<tr>
+						<td id="cennik" colspan="3">
+							<div class="title is-size-3-fullhd is-size-4-desktop is-size-5-mobile has-text-centered has-text-weight-bold">Akumulatory i ładowanie</div>
+						</td>
+					</tr>
+					<tr>
+						<td id="cennik" class="has-text-centered">Test sprawności akumulatora</td>
+						<td id="cennik" class="has-text-centered">1 pojazd</td>
+						<td id="cennik" class="has-text-centered has-text-weight-bold">GRATIS</td>
+					</tr>
+					<tr>
+						<td id="cennik" class="has-text-centered">Wymiana akumulatora</td>
+						<td id="cennik" class="has-text-centered">1 pojazd</td>
+						<td id="cennik" class="has-text-centered has-text-weight-bold">GRATIS</td>
+					</tr>
+					<tr>
+						<td id="cennik" class="has-text-centered">Wymiana alternatora</td>
+						<td id="cennik" class="has-text-centered">1 pojazd</td>
+						<td id="cennik" class="has-text-centered">od 100 zł</td>
+					</tr>
+					
+					<tr>
+						<td id="cennik" colspan="3">
+							<div class="title is-size-3-fullhd is-size-4-desktop is-size-5-mobile has-text-centered has-text-weight-bold">Wymiana opon z wyważeniem</div>
+						</td>
+					</tr>
+					<tr>
+						<td id="cennik" class="has-text-centered">Felgi stalowe - wszystkie rozmiary do 20 cali</td>
+						<td id="cennik" class="has-text-centered">1 pojazd</td>
+						<td id="cennik" class="has-text-centered">40 zł</td>
+					</tr>
+					<tr>
+						<td id="cennik" class="has-text-centered">Felgi aluminiowe - wszystkie rozmiary do 20 cali</td>
+						<td id="cennik" class="has-text-centered">1 pojazd</td>
+						<td id="cennik" class="has-text-centered">50 zł</td>
+					</tr>
+					
+					<tr>
+						<td id="cennik" colspan="3">
+							<div class="title is-size-3-fullhd is-size-4-desktop is-size-5-mobile has-text-centered has-text-weight-bold">Amortyzacja pojazdu</div>
+						</td>
+					</tr>
+					<tr>
+						<td id="cennik" class="has-text-centered">Wymiana amortyzatora przód</td>
+						<td id="cennik" class="has-text-centered">1 koło</td>
+						<td id="cennik" class="has-text-centered">od 70 zł</td>
+					</tr>
+					<tr>
+						<td id="cennik" class="has-text-centered">Wymiana amortyzatora tył</td>
+						<td id="cennik" class="has-text-centered">1 koło</td>
+						<td id="cennik" class="has-text-centered">od 50 zł</td>
+					</tr>
+					<tr>
+						<td id="cennik" class="has-text-centered">Wymiana elementu amortyzatora (łożysko, osłona)</td>
+						<td id="cennik" class="has-text-centered">1 koło</td>
+						<td id="cennik" class="has-text-centered">od 60 zł</td>
+					</tr>
+					<tr>
+						<td id="cennik" class="has-text-centered">Wymiana sprężyny amortyzatora</td>
+						<td id="cennik" class="has-text-centered">1 koło</td>
+						<td id="cennik" class="has-text-centered">od 70 zł</td>
+					</tr>
+					
+					<tr>
+						<td id="cennik" colspan="3">
+							<div class="title is-size-3-fullhd is-size-4-desktop is-size-5-mobile has-text-centered has-text-weight-bold">Naprawa zawieszenia</div>
+						</td>
+					</tr>
+					<tr>
+						<td id="cennik" class="has-text-centered">Wymiana końcówki drążka kierowniczego</td>
+						<td id="cennik" class="has-text-centered">1 szt</td>
+						<td id="cennik" class="has-text-centered">60 zł</td>
+					</tr>
+					<tr>
+						<td id="cennik" class="has-text-centered">Wymiana łącznika stabilizatora</td>
+						<td id="cennik" class="has-text-centered">1 szt</td>
+						<td id="cennik" class="has-text-centered">30 zł</td>
+					</tr>
+					<tr>
+						<td id="cennik" class="has-text-centered">Wymiana łożyska koła</td>
+						<td id="cennik" class="has-text-centered">1 szt</td>
+						<td id="cennik" class="has-text-centered">od 80 zł</td>
+					</tr>
+					<tr>
+						<td id="cennik" class="has-text-centered">Wymiana osłony półosi</td>
+						<td id="cennik" class="has-text-centered">1 szt</td>
+						<td id="cennik" class="has-text-centered">60 zł</td>
+					</tr>
+					<tr>
+						<td id="cennik" class="has-text-centered">Wymiana piasty przedniej</td>
+						<td id="cennik" class="has-text-centered">1 szt</td>
+						<td id="cennik" class="has-text-centered">od 80 zł</td>
+					</tr>
+					<tr>
+						<td id="cennik" class="has-text-centered">Wymiana wahacza</td>
+						<td id="cennik" class="has-text-centered">1 szt</td>
+						<td id="cennik" class="has-text-centered">60 zł</td>
+					</tr>
+					<tr>
+						<td id="cennik" class="has-text-centered">Wymiana tulei wahacza</td>
+						<td id="cennik" class="has-text-centered">1 szt</td>
+						<td id="cennik" class="has-text-centered">60 zł</td>
+					</tr>
+					<tr>
+						<td id="cennik" class="has-text-centered">Wymiana tulei stabilizatora</td>
+						<td id="cennik" class="has-text-centered">1 szt</td>
+						<td id="cennik" class="has-text-centered">30 zł</td>
+					</tr>
+					<tr>
+						<td id="cennik" class="has-text-centered">Wymiana sworznia wahacza</td>
+						<td id="cennik" class="has-text-centered">1 szt</td>
+						<td id="cennik" class="has-text-centered">60 zł</td>
+					</tr>
+					<tr>
+						<td id="cennik" class="has-text-centered">Ustawienie zbieżności</td>
+						<td id="cennik" class="has-text-centered">1 pojazd</td>
+						<td id="cennik" class="has-text-centered">80 zł</td>
+					</tr>
+					
+					<tr>
+						<td id="cennik" colspan="3">
+							<div class="title is-size-3-fullhd is-size-4-desktop is-size-5-mobile has-text-centered has-text-weight-bold">Serwis klimatyzacji</div>
+						</td>
+					</tr>
+					<tr>
+						<td id="cennik" class="has-text-centered">Napełnienie układu czynnikiem R134A (wraz z kosztem czynnika)</td>
+						<td id="cennik" class="has-text-centered">1 pojazd</td>
+						<td id="cennik" class="has-text-centered">150 zł</td>
+					</tr>
+					<tr>
+						<td id="cennik" class="has-text-centered">Ozonowanie ultradźwiękowe</td>
+						<td id="cennik" class="has-text-centered">1 pojazd</td>
+						<td id="cennik" class="has-text-centered">50 zł</td>
+					</tr>
+					<tr>
+						<td id="cennik" class="has-text-centered">Test szczelności układu klimatyzacji</td>
+						<td id="cennik" class="has-text-centered">1 pojazd</td>
+						<td id="cennik" class="has-text-centered">100 zł</td>
+					</tr>
+					
+					<tr>
+						<td id="cennik" colspan="3">
+							<div class="title is-size-3-fullhd is-size-4-desktop is-size-5-mobile has-text-centered has-text-weight-bold">Pozostałe usługi</div>
+						</td>
+					</tr>
+					<tr>
+						<td id="cennik" class="has-text-centered">Diagnostyka komputerowa</td>
+						<td id="cennik" class="has-text-centered">1 pojazd</td>
+						<td id="cennik" class="has-text-centered">50 zł</td>
+					</tr>
+					<tr>
+						<td id="cennik" class="has-text-centered">Wymiana rozrządu</td>
+						<td id="cennik" class="has-text-centered">1 pojazd</td>
+						<td id="cennik" class="has-text-centered">od 200 zł</td>
+					</tr>
+					<tr>
+						<td id="cennik" class="has-text-centered">Wymiana sprzęgła</td>
+						<td id="cennik" class="has-text-centered">1 pojazd</td>
+						<td id="cennik" class="has-text-centered">od 200 zł</td>
+					</tr>
+					
+					<tr>
+						<td id="cennik" colspan="3">
+							<div class="title is-size-3-fullhd is-size-4-desktop is-size-5-mobile has-text-centered has-text-weight-bold">Wypożyczalnia samochodów</div>
+						</td>
+					</tr>
+					<tr>
+						<td id="cennik" class="has-text-centered">Samochód 1</td>
+						<td id="cennik" class="has-text-centered">1 dzień</td>
+						<td id="cennik" class="has-text-centered">xx zł</td>
+					</tr>
+					<tr>
+						<td id="cennik" class="has-text-centered">Samochód 2</td>
+						<td id="cennik" class="has-text-centered">1 dzień</td>
+						<td id="cennik" class="has-text-centered">xx zł</td>
+					</tr>
+					<tr>
+						<td id="cennik" class="has-text-centered">Samochód 3</td>
+						<td id="cennik" class="has-text-centered">1 dzień</td>
+						<td id="cennik" class="has-text-centered">xx zł</td>
+					</tr>
+					<tr>
+						<td id="cennik" class="has-text-centered">Laweta</td>
+						<td id="cennik" class="has-text-centered">1 dzień</td>
+						<td id="cennik" class="has-text-centered">xx zł</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<!-- OFERTA KONIEC -->
+	
+	<div id="stopka" class="columns"> <!-- STOPKA POCZĄTEK -->
+		<div class="column is-3 has-text-centered">
+			<div class="title is-size-6-desktop is-size-5-fullhd is-size-7-mobile has-text-white">Auto Klinika &copy; 2018</div>
+		</div>
+		
+		<div class="column is-3 is-offset-4 has-text-centered">
+			<div class="subtitle is-size-7 has-text-white">Realizacja: Dominik Kłaczany</div>
+		</div>
+	</div> <!-- STOPKA KONIEC -->
+	
+	<!-- Rozwijanie menu na urządzeniach mobilnych-->
+    <script type="text/javascript">
+      (function() {
+        var burger = document.querySelector('.burger');
+        var nav = document.querySelector('#'+burger.dataset.target);
+        burger.addEventListener('click', function(){
+          burger.classList.toggle('is-active');
+          nav.classList.toggle('is-active');
+        });
+      })();
+    </script>
+  </body>
+</html>
